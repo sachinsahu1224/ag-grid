@@ -1,0 +1,55 @@
+/* Make AG Grid fill the page and remove unwanted margins */
+html, body, .full-grid, .ag-theme-alpine {
+  height: 100vh !important;
+  width: 100vw !important;
+  min-height: 100vh;
+  min-width: 100vw;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.ag-theme-alpine .ag-root-wrapper {
+  height: 100% !important;
+  width: 100% !important;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.ag-theme-alpine .ag-header-cell {
+  background: #1976d2;
+  color: #fff;
+  font-size: 1.1rem;
+  border-right: 1px solid #fff;
+  max-width: 300px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: 14px 10px;
+}
+
+.ag-theme-alpine .ag-cell {
+  padding: 12px 8px;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  border-right: 1px solid #e0e0e0;
+}
+
+.ag-theme-alpine .ag-row {
+  background: #f5f7fa;
+  font-size: 1rem;
+  transition: background 0.2s;
+}
+
+.ag-theme-alpine .ag-row:hover {
+  background: #e3f2fd;
+}
+
+.ag-theme-alpine .ag-row-selected {
+  background: #bbdefb !important;
+}
+
+.full-grid, .ag-theme-alpine {
+  width: 100vw !important;
+  min-width: 100vw;
+  max-width: 100vw;
+}

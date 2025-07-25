@@ -1,0 +1,52 @@
+<p>api-calling works!</p>
+<!-- 
+<div>
+    <table border="1">
+        <thead>       <tr>
+            <td>id</td>
+            <th>name</th>
+            <th>username</th>
+            <th>email</th>
+            <th></th>
+        </tr>
+    </thead>
+        <tbody>
+      
+        <tr>
+            <td></td>
+        </tr>
+    
+        </tbody>
+    </table>
+
+</div> -->
+
+<table border="1">
+    <thead>
+      <tr>
+           <th>id</th>
+            <th>name</th>
+            <th>username</th>
+            <th>email</th>
+            <th>phone</th>
+      </tr>
+    </thead>
+    <tbody>
+        
+      
+    @for (item of data; track $index)
+       {
+       
+
+            <tr [class]="{odd:$index%2!==0,even:$index%2===0}">
+        <td>{{item.iddx}}</td>
+        <td>{{item.name | custom}}</td>
+        <td>{{item.username}}</td>
+        <td>{{item.email}}</td>
+        <td>{{item.phone}}</td>
+    </tr>
+        }
+      
+    </tbody>
+   
+  </table>

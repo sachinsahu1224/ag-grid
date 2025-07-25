@@ -1,0 +1,17 @@
+.container{
+    height: 100%;
+    width: 100%;
+    background-color: cyan;
+    border: 2px solid black;
+    padding: 12px 11px 12px 24px;
+}
+
+.deep{
+    display: flex
+;
+flex-direction: row;
+flex-wrap: nowrap;
+align-content: flex-start;
+justify-content: space-evenly;
+align-items: stretch;
+}

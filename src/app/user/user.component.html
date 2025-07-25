@@ -1,0 +1,9 @@
+<div class="container">
+    <h2 appFilter>parent Components</h2>
+    <div class="box">
+        <ul>
+            <li appFilter>{{data|custom}}</li>
+        </ul>
+    </div>
+</div>
+<app-login appFilter (inputData)="handleDataFromChild($event)"></app-login>
